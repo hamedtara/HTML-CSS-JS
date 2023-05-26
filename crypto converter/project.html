@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CoinLayer Example</title>
+    <link rel="stylesheet" href="project.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>CoinLayer Example</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <form class="currency-selection">
+          <label>Select Currency:</label>
+          <div class="currency-radio">
+            <input type="radio" id="usd" name="currency" value="USD" checked />
+            <label for="usd">USD</label>
+          </div>
+          <div class="currency-radio">
+            <input type="radio" id="cad" name="currency" value="CAD" />
+            <label for="cad">CAD</label>
+          </div>
+          <div class="currency-radio">
+            <input type="radio" id="eur" name="currency" value="EUR" />
+            <label for="eur">EUR</label>
+          </div>
+        </form>
+
+        <div id="exchange-rates">
+          <h2>Exchange Rates</h2>
+          <ul>
+            <li>
+              BTC:
+              <div class="currency-price" id="btc-price"></div>
+            </li>
+            <li>
+              ETH:
+              <div class="currency-price" id="eth-price"></div>
+            </li>
+            <li>
+              LTC:
+              <div class="currency-price" id="ltc-price"></div>
+            </li>
+            <li>
+              XRP:
+              <div class="currency-price" id="xrp-price"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>
+          &copy; Hamedtara. All rights reserved. |
+          <a href="www.hamedtara.com" target="_blank">Privacy Policy</a> |
+        </p>
+      </div>
+    </footer>
+
+    <script src="project.js"></script>
+  </body>
+</html>
